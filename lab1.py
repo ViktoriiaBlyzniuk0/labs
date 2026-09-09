@@ -8,6 +8,15 @@ numbers = [1, 2, 3]    # list — список
 coordinates = (10, 20) # tuple — кортеж
 unique = {1, 2, 3}     # set — множина
 person = {"name": "Vika", "age": 15}  # dict — словник
+a = 10
+b = 3
+
+print("Додавання:", a + b)
+print("Віднімання:", a - b)
+print("Множення:", a * b)
+print("Ділення:", a / b)
+print("Ділення націло:", a // b)
+print("Піднесення до степеня:", a ** b)
 print(name, type(name))
 print(age, type(age))
 print(height, type(height))

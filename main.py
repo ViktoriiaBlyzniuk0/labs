@@ -1,6 +1,6 @@
 # Дані користувачів
-users = {
-    "vika": {
+users = {"vika":
+    {
         "password": "1234",
         "grades": [12, 10, 8, 5, 3, 11]
     },
@@ -19,14 +19,14 @@ users = {
 }
 
 # Введення логіна та пароля
-login = input("Введіть логін: ")
+login = input("Введіть логін: ")   #дані з клавіатури через термінал
 password = input("Введіть пароль: ")
 
 # Перевірка даних
-if login in users and users[login]["password"] == password:
+if login in users and users[login]["password"] == password: #адаємо умову якщо
     print("\nВхід виконано успішно!")
 
-    grades = users[login]["grades"]
+    grades = users[login]["grades"] #Знайти користувача, якого ввів користувач, і взяти його пароль
 
     # Виведення всіх оцінок
     print("Ваші оцінки:", grades)
@@ -38,7 +38,7 @@ if login in users and users[login]["password"] == password:
     for grade in grades:
         if 5 <= grade <= 12:
             satisfactory += 1
-        elif 1 <= grade <= 4:
+        elif 1 <= grade <= 4:  #інакше, якщо
             unsatisfactory += 1
 
     print("Кількість задовільних оцінок (5-12):", satisfactory)
